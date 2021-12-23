@@ -175,6 +175,9 @@
     <Content Include="wwwroot\Anh_Icon\icon_stw.png" />
     <Content Include="wwwroot\Anh_Icon\icon_youtube.png" />
     <Content Include="wwwroot\Anh_Icon\logo.png" />
+    <Content Include="wwwroot\Anh_Icon\slider_1.jpg" />
+    <Content Include="wwwroot\Anh_Icon\slider_2.jpg" />
+    <Content Include="wwwroot\Anh_Icon\slider_4.jpg" />
     <Content Include="wwwroot\css\index.css" />
     <Content Include="wwwroot\Images\balohocsinh.png" />
     <Content Include="wwwroot\Images\balomamnon.png" />
@@ -260,7 +263,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Header.cshtml" />
     <Content Include="Views\Home\Blog.cshtml" />
-    <Content Include="Views\Footer.cshtml" />
+    <Content Include="Views\Shared\Footer.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
