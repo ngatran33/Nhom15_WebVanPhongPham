@@ -3,6 +3,7 @@
 @{
     ViewBag.Title = "Thế giới văn phòng phẩm";
 }
+<<<<<<< HEAD
 <!--SlideShow-->
     <!-- Slideshow container -->
     <div class="slideshow-container">
@@ -106,3 +107,21 @@
         @Html.PagedListPager(Model, page => Url.Action("Index", new { page }))
     </div>
 </section>
+=======
+<link href="~/wwwroot/css/index.css" rel="stylesheet" />
+<section id="show">
+    <div class="container">
+        <div id="sliderFrame">
+            <div id="slider">
+                <img src="~/wwwroot/Anh_Icon/slider_1.jpg" alt="Welcome to Honghaonline.com" />
+                <img src="~/wwwroot/Anh_Icon/slider_2.jpg" alt="" />
+                <img src="~/wwwroot/Anh_Icon/slider_4.jpg" alt="" />
+            </div>
+            <div id="htmlcaption" style="display: none;">
+                <em>HTML</em> caption. Link to <a href="http://www.google.com/">Google</a>.
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</section>
+>>>>>>> nga
