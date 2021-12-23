@@ -179,6 +179,9 @@
     <Content Include="wwwroot\Images\balohocsinh.png" />
     <Content Include="wwwroot\Images\balomamnon.png" />
     <Content Include="wwwroot\Images\balospider.png" />
+    <Content Include="wwwroot\Images\blog1.jpg" />
+    <Content Include="wwwroot\Images\blog2.jpg" />
+    <Content Include="wwwroot\Images\blog3.jpg" />
     <Content Include="wwwroot\Images\But1.png" />
     <Content Include="wwwroot\Images\But2.jpg" />
     <Content Include="wwwroot\Images\But3.jpg" />
@@ -188,9 +191,8 @@
     <Content Include="wwwroot\Images\compa.jpg" />
     <Content Include="wwwroot\Images\ddvp1.png" />
     <Content Include="wwwroot\Images\ddvp2.jpg" />
-    <Content Include="wwwroot\Images\ddvp3.png" />
-    <Content Include="wwwroot\Images\ddvp4.png" />
-    <Content Include="wwwroot\Images\ddvp5.jpg" />
+    <Content Include="wwwroot\Images\ddvp3.jpg" />
+    <Content Include="wwwroot\Images\ddvp4.jpg" />
     <Content Include="wwwroot\Images\giaythucong.jpg" />
     <Content Include="wwwroot\Images\mauve.png" />
     <Content Include="wwwroot\Images\maytinh.png" />
