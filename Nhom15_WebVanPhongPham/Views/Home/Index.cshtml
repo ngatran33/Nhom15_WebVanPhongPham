@@ -1,6 +1,9 @@
-﻿@{
-    ViewBag.Title = "Home Page";
+﻿@model PagedList.IPagedList<Nhom15_WebVanPhongPham.Models.SanPham>
+@using PagedList.Mvc;
+@{
+    ViewBag.Title = "Thế giới văn phòng phẩm";
 }
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <link href="~/wwwroot/css/index.css" rel="stylesheet" />
 <section id="show">
@@ -10,12 +13,85 @@
                 <img src="~/wwwroot/Anh_Icon/slider_1.jpg" alt="Welcome to Honghaonline.com" />
                 <img src="~/wwwroot/Anh_Icon/slider_2.jpg" alt="" />
                 <img src="~/wwwroot/Anh_Icon/slider_4.jpg" alt="" />
-            </div>
-            <div id="htmlcaption" style="display: none;">
-                <em>HTML</em> caption. Link to <a href="http://www.google.com/">Google</a>.
-            </div>
-            <div class="clearfix"></div>
+=======
+<!--SlideShow-->
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            
+            <img src="~/wwwroot/Anh_Icon/slider_1.jpg" style="width:100%">
+
         </div>
+
+        <div class="mySlides fade">
+         
+            <img src="~/wwwroot/Anh_Icon/slider_2.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+           
+            <img src="~/wwwroot/Anh_Icon/slider_4.jpg" style="width:100%">
+
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var dots = document.getElementsByClassName("dot");
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            dots[slideIndex - 1].className += " active";
+            
+        }
+    </script>
+
+<!-- The dots/circles -->
+
+<!--/SlideShow-->
+    <section>
+        <div class="container" style="text-align:center; margin-top:10px;">
+            <h1 id="title-sp"><b>DANH SÁCH SẢN PHẨM</b></h1>
+            <div style="float:right">
+                <div>
+                    <div class="dl-horizontal" style="font-size: 20px; color: #1372f7 ">
+                        @Html.ActionLink("Tên", "Index", new { sortOder = ViewBag.SapTheoTen }) | 
+                        @Html.ActionLink("Giá", "Index", new { sortOder = ViewBag.SapTheoGia })
+
+                    </div>
+                </div>
+>>>>>>> main
+            </div>
+            <div style="float: right; padding-right: 20px; margin: 0 auto" >
+                <p style="font-weight: bold; font-size: 20px">Sắp xếp theo: </p>
+            </div>
+        </div>
+<<<<<<< HEAD
     </div>
 </section>
 =======
@@ -95,6 +171,8 @@
                 <p style="font-weight: bold; font-size: 20px">Sắp xếp theo: </p>
             </div>
         </div>
+=======
+>>>>>>> main
         
         <div class="container">
             <div class="row clearfix">
@@ -134,4 +212,7 @@
         </div>
     </section>
 
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> main

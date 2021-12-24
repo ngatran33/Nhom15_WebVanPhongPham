@@ -5,12 +5,14 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using Nhom15_WebVanPhongPham.Models;
+using PagedList;
 
 namespace Nhom15_WebVanPhongPham.Controllers
 {
     public class HomeController : Controller
     {
         DBNhom15 db = new DBNhom15();
+<<<<<<< HEAD
 <<<<<<< Updated upstream
         public ActionResult Index()
         {
@@ -26,6 +28,9 @@ namespace Nhom15_WebVanPhongPham.Controllers
 =======
         
 >>>>>>> Stashed changes
+=======
+        
+>>>>>>> main
 
         public ActionResult ProductList()
         {
@@ -61,10 +66,37 @@ namespace Nhom15_WebVanPhongPham.Controllers
             }
             return View(blog);
         }
+        public ActionResult Index(string id, string sortOder, string searchString, string currentFilter, int? page)
+        {
+            List<SanPham> sanPhams = new List<SanPham>();
+            ViewBag.CurrentSort = sortOder;//lấy yêu cầu sắp
+            ViewBag.SapTheoTen = String.IsNullOrEmpty(sortOder) ? "name_desc" : "";
+            ViewBag.SapTheoGia = sortOder == "Gia" ? "gia_desc" : "Gia";
+           
+            if (id == null)
+            {
+                sanPhams = db.SanPhams.Select(s => s).ToList();
+            }
+            else
+            {
+                sanPhams = db.SanPhams.Where(s => s.DanhMuc.TenDM.Contains(id)).Select(s => s).ToList();
+            }
+            if (searchString != null)
+            {
+                page = 1;
+            }
+            else
+            {
+                searchString = currentFilter;
+            }
+            ViewBag.CurrentFilter = searchString;
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 
 =======
+=======
+>>>>>>> main
             if (!String.IsNullOrEmpty(searchString))
             {
                 sanPhams = db.SanPhams.Where(s => s.TenSP.Contains(searchString) || s.ThuongHieu.Contains(searchString)).Select(s => s).ToList();
@@ -102,11 +134,14 @@ namespace Nhom15_WebVanPhongPham.Controllers
             }
             return View(sanPham);
         }
+<<<<<<< HEAD
         //public PartialViewResult _Searchbar()
         //{
         //    var sanPhams = db.SanPhams.Select(n => n);
         //    return PartialView(sanPhams);
         //}
 >>>>>>> Stashed changes
+=======
+>>>>>>> main
     }
 }
