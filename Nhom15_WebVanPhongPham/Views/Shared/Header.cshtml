@@ -15,28 +15,16 @@
             </div>
         </div>
     </div>
-    @using (Html.BeginForm("Index", "Home", FormMethod.Post))
-    {
     <div class="header_midle">
         <div class="header_brand-logo">
             <img src="~/wwwroot/Anh_Icon/logo.png" class="logo_img" />
         </div>
         <div class="header_navbar-search">
-
             <div class="box_search">
-                @*<input placeholder="Tìm kiếm nước hoa hoặc nhãn hiệu" name="keyword" />*@
-                @Html.TextBox("SearchString", ViewBag.CurrentFilter as string, new { @class = "input", @placeholder = "Tìm kiếm..." })
-
+                <input type="search" placeholder="Tìm kiếm ..." />
             </div>
-            <button class="icon_search" type="submit"><i class="fas fa-search "></i></button>
-
-
-            @*@{
-                Html.RenderAction("_Searchbar", "Home");
-            }*@
+            <a href=@Url.Action("ProductList","Home") class="icon_search"><i class="fas fa-search "></i></a>
         </div>
-
-
         <div class="cart">
             <div class="cart_child">
                 <a href=@Url.Action("Card","Home") class="header_right-nav--link">Giỏ hàng</a>
@@ -44,8 +32,6 @@
             </div>
         </div>
     </div>
-    }
-
     <div class="header_menu">
         <ul class="header_navbar">
             <li class="header_navbar-item">
@@ -69,4 +55,4 @@
             </li>
         </ul>
     </div>
-    </div>
+</div>

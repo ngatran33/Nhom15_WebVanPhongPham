@@ -13,7 +13,10 @@ namespace Nhom15_WebVanPhongPham.Controllers
     {
         DBNhom15 db = new DBNhom15();
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
+=======
+>>>>>>> parent of 953ec6d (up)
         public ActionResult Index()
         {
             return View();
@@ -25,12 +28,15 @@ namespace Nhom15_WebVanPhongPham.Controllers
 
             return View();
         }
+<<<<<<< HEAD
 =======
         
 >>>>>>> Stashed changes
 =======
         
 >>>>>>> main
+=======
+>>>>>>> parent of 953ec6d (up)
 
         public ActionResult ProductList()
         {
@@ -92,6 +98,7 @@ namespace Nhom15_WebVanPhongPham.Controllers
             ViewBag.CurrentFilter = searchString;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 
 =======
@@ -143,5 +150,8 @@ namespace Nhom15_WebVanPhongPham.Controllers
 >>>>>>> Stashed changes
 =======
 >>>>>>> main
+=======
+
+>>>>>>> parent of 953ec6d (up)
     }
 }
