@@ -167,6 +167,7 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Areas\Admin\Views\web.config" />
+    <Content Include="wwwroot\Anh_Icon\chungnhan.png" />
     <Content Include="wwwroot\Anh_Icon\icon_call.png" />
     <Content Include="wwwroot\Anh_Icon\icon_facebook.png" />
     <Content Include="wwwroot\Anh_Icon\icon_giohang.png" />
