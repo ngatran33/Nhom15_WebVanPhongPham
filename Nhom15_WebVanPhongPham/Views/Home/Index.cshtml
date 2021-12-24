@@ -93,7 +93,15 @@
                                 <img src="@Url.Content(ImagePath)" alt="" width="250" height="250" />
                             </a>
                             <div class="product-body">
-                                <h3 class="product-name"><a href="@Url.Action("ChiTietSP","Home", new {id = item.MaSp})">@Html.DisplayFor(modelItem => item.TenSP)</a></h3>
+                                <h3 class="product-name"><a href="@Url.Action("ChiTietSP","Home", new {id = item.MaSp})">
+                                        @if (item.TenSP.Length > 25)
+                                        {
+                                            <label>@item.TenSP.Substring(0, 25) ...</label>
+                                        }
+                                        else
+                                        {
+                                            <label> @item.TenSP</label>
+                                        }</a></h3>
                                 <p class="product-category">@Html.DisplayFor(modelItem => item.ThuongHieu)</p>
                                 <h4 class="product-price">@Html.DisplayFor(modelItem => item.Gia) VNĐ</h4>
                             </div>
