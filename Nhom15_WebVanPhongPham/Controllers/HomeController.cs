@@ -12,14 +12,7 @@ namespace Nhom15_WebVanPhongPham.Controllers
     public class HomeController : Controller
     {
         DBNhom15 db = new DBNhom15();
-       
-
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
-        }
+        
 
         public ActionResult ProductList()
         {
